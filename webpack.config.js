@@ -2,7 +2,7 @@ import webpack from 'webpack'
 import cssnano from 'cssnano'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import config from '../config'
+import config from './config'
 import _debug from 'debug'
 
 const debug = _debug('app:webpack:config')

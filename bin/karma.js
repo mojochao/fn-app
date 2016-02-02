@@ -1,3 +1,3 @@
 require('babel-register')
 
-module.exports = require('../build/karma.conf')
+module.exports = require('../karma.conf.js')
