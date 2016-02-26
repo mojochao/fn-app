@@ -1,17 +1,12 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { actions as counterActions } from '../../redux/modules/counter'
 
 export class HomeView extends React.Component {
-  static propTypes = {
-    params: PropTypes.object.isRequired()
-  };
-
   render () {
     return (
       <div className='container text-center'>
         <h2>Home View</h2>
-        <h3>{this.props.params.id}</h3>
       </div>
     )
   }
