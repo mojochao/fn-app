@@ -4,15 +4,14 @@ import { actions as counterActions } from '../../redux/modules/counter'
 
 export class HomeView extends React.Component {
   static propTypes = {
-    counter: PropTypes.number.isRequired,
-    doubleAsync: PropTypes.func.isRequired,
-    increment: PropTypes.func.isRequired
+    params: PropTypes.object.isRequired()
   };
 
   render () {
     return (
       <div className='container text-center'>
-        <h2>Home</h2>
+        <h2>Home View</h2>
+        <h3>{this.props.params.id}</h3>
       </div>
     )
   }
